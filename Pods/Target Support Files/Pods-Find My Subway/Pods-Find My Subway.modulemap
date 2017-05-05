@@ -1,0 +1,6 @@
+framework module Pods_Find_My_Subway {
+  umbrella header "Pods-Find My Subway-umbrella.h"
+
+  export *
+  module * { export * }
+}

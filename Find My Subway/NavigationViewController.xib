@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationViewController" customModule="Find_My_Subway" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybk-Ou-lBH" userLabel="Compass" customClass="CompassView" customModule="Find_My_Subway" customModuleProvider="target">
+                    <rect key="frame" x="8" y="617" width="42" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="U1O-sg-K86"/>
+                        <constraint firstAttribute="height" constant="42" id="l5m-gu-acS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQK-3B-yDz" userLabel="Debug" customClass="DebugButton" customModule="Find_My_Subway" customModuleProvider="target">
+                    <rect key="frame" x="325" y="617" width="42" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="4ez-7l-wKU"/>
+                        <constraint firstAttribute="width" constant="42" id="ZUl-oJ-cs9"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tQK-3B-yDz" secondAttribute="trailing" constant="8" id="LE3-c5-JuK"/>
+                <constraint firstAttribute="bottom" secondItem="ybk-Ou-lBH" secondAttribute="bottom" constant="8" id="lVW-Fi-sDA"/>
+                <constraint firstItem="ybk-Ou-lBH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="rMe-MY-BHi"/>
+                <constraint firstAttribute="bottom" secondItem="tQK-3B-yDz" secondAttribute="bottom" constant="8" id="s1Z-NU-Qjv"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

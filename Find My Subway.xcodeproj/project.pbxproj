@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C24C10CFF6A09830077530C /* Pods_Find_My_Subway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A164B027E6DED9D9DA0E828D /* Pods_Find_My_Subway.framework */; };
+		270399F11EAE304F009AACA3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270399F01EAE304F009AACA3 /* DataManager.swift */; };
+		270399F41EAE306B009AACA3 /* SubwayStationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270399F31EAE306B009AACA3 /* SubwayStationData.swift */; };
+		270399F81EAE6947009AACA3 /* XMLData.xml in Resources */ = {isa = PBXBuildFile; fileRef = 270399F71EAE6947009AACA3 /* XMLData.xml */; };
+		2703DAAF1EB4F08B0015F7B1 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703DAAD1EB4F08B0015F7B1 /* NavigationViewController.swift */; };
+		2703DAB01EB4F08B0015F7B1 /* NavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2703DAAE1EB4F08B0015F7B1 /* NavigationViewController.xib */; };
+		2703DAB41EB4FB870015F7B1 /* CMDeviceMotionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703DAB31EB4FB870015F7B1 /* CMDeviceMotionExtension.swift */; };
+		2703DAB61EB512540015F7B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703DAB51EB512540015F7B1 /* Constants.swift */; };
+		27201F561EBBE23500628EBB /* Stations.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27201F551EBBE23500628EBB /* Stations.txt */; };
+		27201F581EBBE30A00628EBB /* ImportDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27201F571EBBE30A00628EBB /* ImportDataManager.swift */; };
+		27201F5B1EBCC58200628EBB /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27201F5A1EBCC58200628EBB /* StationData.swift */; };
+		273446A01E94883300C54B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734469F1E94883300C54B61 /* AppDelegate.swift */; };
+		273446A41E94883300C54B61 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273446A31E94883300C54B61 /* SceneView.swift */; };
+		273446A91E94883300C54B61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273446A81E94883300C54B61 /* Assets.xcassets */; };
+		27562CB01EB3CB6800F25C8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27562CAE1EB3CB6800F25C8C /* MainViewController.swift */; };
+		27562CB11EB3CB6800F25C8C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27562CAF1EB3CB6800F25C8C /* MainViewController.xib */; };
+		27835DAE1EAD0D3800FF264C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27835DAD1EAD0D3800FF264C /* UIViewExtension.swift */; };
+		27835DB01EAD0F2C00FF264C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27835DAF1EAD0F2C00FF264C /* Utils.swift */; };
+		27835DB21EAD3FF500FF264C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27835DB11EAD3FF500FF264C /* StringExtension.swift */; };
+		2783DCFB1EAFFD9200590B1E /* SelectStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783DCF91EAFFD9200590B1E /* SelectStationViewController.swift */; };
+		2783DCFC1EAFFD9200590B1E /* SelectStationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2783DCFA1EAFFD9200590B1E /* SelectStationViewController.xib */; };
+		2783DD001EB0021E00590B1E /* StationListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783DCFE1EB0021E00590B1E /* StationListTable.swift */; };
+		2783DD011EB0021E00590B1E /* StationListTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2783DCFF1EB0021E00590B1E /* StationListTable.xib */; };
+		2783DD061EB0051B00590B1E /* StationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783DD041EB0051B00590B1E /* StationListCell.swift */; };
+		2783DD071EB0051B00590B1E /* StationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2783DD051EB0051B00590B1E /* StationListCell.xib */; };
+		2783DD0A1EB00BF200590B1E /* StationListSubwayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783DD091EB00BF200590B1E /* StationListSubwayView.swift */; };
+		2783DD111EB048B400590B1E /* FilterStationsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783DD0F1EB048B400590B1E /* FilterStationsCollection.swift */; };
+		2783DD121EB048B400590B1E /* FilterStationsCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2783DD101EB048B400590B1E /* FilterStationsCollection.xib */; };
+		2783DD151EB0497D00590B1E /* FilterStationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783DD131EB0497D00590B1E /* FilterStationsCell.swift */; };
+		2783DD161EB0497D00590B1E /* FilterStationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2783DD141EB0497D00590B1E /* FilterStationsCell.xib */; };
+		2783DD181EB04AC100590B1E /* SubwayStationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783DD171EB04AC100590B1E /* SubwayStationHelper.swift */; };
+		2787A5CB1E95E13C00EF276C /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787A5CA1E95E13C00EF276C /* CameraController.swift */; };
+		2787A5D31E95E6ED00EF276C /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2787A5D21E95E6ED00EF276C /* SplashScreen.xib */; };
+		2787A5D51E9709BE00EF276C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787A5D41E9709BE00EF276C /* LocationManager.swift */; };
+		2787A5DF1EAC283200EF276C /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787A5DD1EAC283200EF276C /* DebugViewController.swift */; };
+		2787A5E01EAC283200EF276C /* DebugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2787A5DE1EAC283200EF276C /* DebugViewController.xib */; };
+		2787A5E21EAC284200EF276C /* DebugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787A5E11EAC284200EF276C /* DebugManager.swift */; };
+		2787A5E41EAC2EF400EF276C /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787A5E31EAC2EF400EF276C /* StyleKit.swift */; };
+		2787A5E71EAC3FB000EF276C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787A5E61EAC3FB000EF276C /* UIImageExtension.swift */; };
+		2787A5E91EAC449500EF276C /* DebugButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787A5E81EAC449500EF276C /* DebugButton.swift */; };
+		27AD62BC1EBA8A8000957C18 /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AD62BB1EBA8A8000957C18 /* SelectionButton.swift */; };
+		27E740A11EAD4F4300BC41CD /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E740A01EAD4F4300BC41CD /* CompassView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		270399F01EAE304F009AACA3 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		270399F31EAE306B009AACA3 /* SubwayStationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayStationData.swift; sourceTree = "<group>"; };
+		270399F71EAE6947009AACA3 /* XMLData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = XMLData.xml; path = SubwayData/XMLData.xml; sourceTree = "<group>"; };
+		2703DAAD1EB4F08B0015F7B1 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		2703DAAE1EB4F08B0015F7B1 /* NavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationViewController.xib; sourceTree = "<group>"; };
+		2703DAB31EB4FB870015F7B1 /* CMDeviceMotionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDeviceMotionExtension.swift; sourceTree = "<group>"; };
+		2703DAB51EB512540015F7B1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		27201F551EBBE23500628EBB /* Stations.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Stations.txt; path = SubwayData/Stations.txt; sourceTree = "<group>"; };
+		27201F571EBBE30A00628EBB /* ImportDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportDataManager.swift; sourceTree = "<group>"; };
+		27201F5A1EBCC58200628EBB /* StationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
+		2734469C1E94883300C54B61 /* Find My Subway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find My Subway.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2734469F1E94883300C54B61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		273446A31E94883300C54B61 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		273446A81E94883300C54B61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		273446AD1E94883300C54B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27562CAE1EB3CB6800F25C8C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		27562CAF1EB3CB6800F25C8C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		27835DAD1EAD0D3800FF264C /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		27835DAF1EAD0F2C00FF264C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		27835DB11EAD3FF500FF264C /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2783DCF91EAFFD9200590B1E /* SelectStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectStationViewController.swift; sourceTree = "<group>"; };
+		2783DCFA1EAFFD9200590B1E /* SelectStationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectStationViewController.xib; sourceTree = "<group>"; };
+		2783DCFE1EB0021E00590B1E /* StationListTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListTable.swift; sourceTree = "<group>"; };
+		2783DCFF1EB0021E00590B1E /* StationListTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationListTable.xib; sourceTree = "<group>"; };
+		2783DD041EB0051B00590B1E /* StationListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListCell.swift; sourceTree = "<group>"; };
+		2783DD051EB0051B00590B1E /* StationListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationListCell.xib; sourceTree = "<group>"; };
+		2783DD091EB00BF200590B1E /* StationListSubwayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListSubwayView.swift; sourceTree = "<group>"; };
+		2783DD0F1EB048B400590B1E /* FilterStationsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterStationsCollection.swift; sourceTree = "<group>"; };
+		2783DD101EB048B400590B1E /* FilterStationsCollection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterStationsCollection.xib; sourceTree = "<group>"; };
+		2783DD131EB0497D00590B1E /* FilterStationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterStationsCell.swift; sourceTree = "<group>"; };
+		2783DD141EB0497D00590B1E /* FilterStationsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterStationsCell.xib; sourceTree = "<group>"; };
+		2783DD171EB04AC100590B1E /* SubwayStationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubwayStationHelper.swift; sourceTree = "<group>"; };
+		2787A5CA1E95E13C00EF276C /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		2787A5D21E95E6ED00EF276C /* SplashScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
+		2787A5D41E9709BE00EF276C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2787A5DD1EAC283200EF276C /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		2787A5DE1EAC283200EF276C /* DebugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugViewController.xib; sourceTree = "<group>"; };
+		2787A5E11EAC284200EF276C /* DebugManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugManager.swift; sourceTree = "<group>"; };
+		2787A5E31EAC2EF400EF276C /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
+		2787A5E61EAC3FB000EF276C /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		2787A5E81EAC449500EF276C /* DebugButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugButton.swift; sourceTree = "<group>"; };
+		27AD62BB1EBA8A8000957C18 /* SelectionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionButton.swift; sourceTree = "<group>"; };
+		27E740A01EAD4F4300BC41CD /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		791D949869F2A0FD7E2556C8 /* Pods-Find My Subway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find My Subway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find My Subway/Pods-Find My Subway.debug.xcconfig"; sourceTree = "<group>"; };
+		A164B027E6DED9D9DA0E828D /* Pods_Find_My_Subway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_My_Subway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62711D3B600D683C9B1BD05 /* Pods-Find My Subway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find My Subway.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find My Subway/Pods-Find My Subway.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		273446991E94883200C54B61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C24C10CFF6A09830077530C /* Pods_Find_My_Subway.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270399F21EAE3057009AACA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				27201F551EBBE23500628EBB /* Stations.txt */,
+				270399F71EAE6947009AACA3 /* XMLData.xml */,
+				270399F01EAE304F009AACA3 /* DataManager.swift */,
+				270399F31EAE306B009AACA3 /* SubwayStationData.swift */,
+				27201F571EBBE30A00628EBB /* ImportDataManager.swift */,
+				27201F5A1EBCC58200628EBB /* StationData.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		2703DAAC1EB4F0740015F7B1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2703DAAD1EB4F08B0015F7B1 /* NavigationViewController.swift */,
+				2703DAAE1EB4F08B0015F7B1 /* NavigationViewController.xib */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		2703DAB21EB4FB570015F7B1 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				2787A5D41E9709BE00EF276C /* LocationManager.swift */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		273446931E94883200C54B61 = {
+			isa = PBXGroup;
+			children = (
+				2734469E1E94883300C54B61 /* Find My Subway */,
+				2734469D1E94883300C54B61 /* Products */,
+				8D643B152C63B2FE15910F21 /* Pods */,
+				9322DC866BCFB47C35BD45AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2734469D1E94883300C54B61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2734469C1E94883300C54B61 /* Find My Subway.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2734469E1E94883300C54B61 /* Find My Subway */ = {
+			isa = PBXGroup;
+			children = (
+				273446A81E94883300C54B61 /* Assets.xcassets */,
+				2787A5CC1E95E14700EF276C /* Scripts */,
+				273446AD1E94883300C54B61 /* Info.plist */,
+			);
+			path = "Find My Subway";
+			sourceTree = "<group>";
+		};
+		27562CAD1EB3CB5100F25C8C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				27562CAE1EB3CB6800F25C8C /* MainViewController.swift */,
+				27562CAF1EB3CB6800F25C8C /* MainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2783DCF81EAFFD4D00590B1E /* Select Station */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD0C1EB0487700590B1E /* Filter */,
+				2783DCFD1EB001F600590B1E /* Stations List */,
+				2783DCF91EAFFD9200590B1E /* SelectStationViewController.swift */,
+				2783DCFA1EAFFD9200590B1E /* SelectStationViewController.xib */,
+			);
+			name = "Select Station";
+			sourceTree = "<group>";
+		};
+		2783DCFD1EB001F600590B1E /* Stations List */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD031EB004FD00590B1E /* Cell */,
+				2783DD0B1EB046B800590B1E /* Table */,
+			);
+			name = "Stations List";
+			sourceTree = "<group>";
+		};
+		2783DD031EB004FD00590B1E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD081EB00B9000590B1E /* Stations View */,
+				2783DD041EB0051B00590B1E /* StationListCell.swift */,
+				2783DD051EB0051B00590B1E /* StationListCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		2783DD081EB00B9000590B1E /* Stations View */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD091EB00BF200590B1E /* StationListSubwayView.swift */,
+			);
+			name = "Stations View";
+			sourceTree = "<group>";
+		};
+		2783DD0B1EB046B800590B1E /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				2783DCFE1EB0021E00590B1E /* StationListTable.swift */,
+				2783DCFF1EB0021E00590B1E /* StationListTable.xib */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		2783DD0C1EB0487700590B1E /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD0E1EB0488200590B1E /* Cell */,
+				2783DD0D1EB0487E00590B1E /* Table */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
+		2783DD0D1EB0487E00590B1E /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD0F1EB048B400590B1E /* FilterStationsCollection.swift */,
+				2783DD101EB048B400590B1E /* FilterStationsCollection.xib */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		2783DD0E1EB0488200590B1E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD131EB0497D00590B1E /* FilterStationsCell.swift */,
+				2783DD141EB0497D00590B1E /* FilterStationsCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		2783DD191EB04ADE00590B1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2703DAB31EB4FB870015F7B1 /* CMDeviceMotionExtension.swift */,
+				2787A5E61EAC3FB000EF276C /* UIImageExtension.swift */,
+				27835DAD1EAD0D3800FF264C /* UIViewExtension.swift */,
+				27835DB11EAD3FF500FF264C /* StringExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2787A5CC1E95E14700EF276C /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2787A5D81EAC27E800EF276C /* Debug */,
+				27AD62BA1EBA8A3900957C18 /* Views */,
+				27AD62B91EBA8A0D00957C18 /* View Controllers */,
+				270399F21EAE3057009AACA3 /* Data */,
+				2787A5E51EAC3F8100EF276C /* Helpers */,
+				2703DAB21EB4FB570015F7B1 /* Device */,
+				2734469F1E94883300C54B61 /* AppDelegate.swift */,
+				2787A5D21E95E6ED00EF276C /* SplashScreen.xib */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		2787A5CD1E95E60D00EF276C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2787A5CA1E95E13C00EF276C /* CameraController.swift */,
+				273446A31E94883300C54B61 /* SceneView.swift */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		2787A5D81EAC27E800EF276C /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				2787A5DD1EAC283200EF276C /* DebugViewController.swift */,
+				2787A5DE1EAC283200EF276C /* DebugViewController.xib */,
+				2787A5E11EAC284200EF276C /* DebugManager.swift */,
+				2787A5E81EAC449500EF276C /* DebugButton.swift */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		2787A5E51EAC3F8100EF276C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2783DD191EB04ADE00590B1E /* Extensions */,
+				2787A5E31EAC2EF400EF276C /* StyleKit.swift */,
+				27835DAF1EAD0F2C00FF264C /* Utils.swift */,
+				2783DD171EB04AC100590B1E /* SubwayStationHelper.swift */,
+				2703DAB51EB512540015F7B1 /* Constants.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		27AD62B81EBA89FE00957C18 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				27AD62BB1EBA8A8000957C18 /* SelectionButton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		27AD62B91EBA8A0D00957C18 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2703DAAC1EB4F0740015F7B1 /* Navigation */,
+				27562CAD1EB3CB5100F25C8C /* Main */,
+				2783DCF81EAFFD4D00590B1E /* Select Station */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		27AD62BA1EBA8A3900957C18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2787A5CD1E95E60D00EF276C /* Scene */,
+				27E7409F1EAD4F1300BC41CD /* Compass */,
+				27AD62B81EBA89FE00957C18 /* Buttons */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		27E7409F1EAD4F1300BC41CD /* Compass */ = {
+			isa = PBXGroup;
+			children = (
+				27E740A01EAD4F4300BC41CD /* CompassView.swift */,
+			);
+			name = Compass;
+			sourceTree = "<group>";
+		};
+		8D643B152C63B2FE15910F21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				791D949869F2A0FD7E2556C8 /* Pods-Find My Subway.debug.xcconfig */,
+				D62711D3B600D683C9B1BD05 /* Pods-Find My Subway.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9322DC866BCFB47C35BD45AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A164B027E6DED9D9DA0E828D /* Pods_Find_My_Subway.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2734469B1E94883200C54B61 /* Find My Subway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273446B01E94883300C54B61 /* Build configuration list for PBXNativeTarget "Find My Subway" */;
+			buildPhases = (
+				E78C459CECD64712E081F16A /* [CP] Check Pods Manifest.lock */,
+				273446981E94883200C54B61 /* Sources */,
+				273446991E94883200C54B61 /* Frameworks */,
+				2734469A1E94883200C54B61 /* Resources */,
+				08517DCC3C73C079C3E555CB /* [CP] Embed Pods Frameworks */,
+				CEE7BD116003C1C2062729F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find My Subway";
+			productName = "Find My Subway";
+			productReference = 2734469C1E94883300C54B61 /* Find My Subway.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		273446941E94883200C54B61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Ameropel;
+				TargetAttributes = {
+					2734469B1E94883200C54B61 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YXTAQ7A7F2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 273446971E94883200C54B61 /* Build configuration list for PBXProject "Find My Subway" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 273446931E94883200C54B61;
+			productRefGroup = 2734469D1E94883300C54B61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2734469B1E94883200C54B61 /* Find My Subway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2734469A1E94883200C54B61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2783DD071EB0051B00590B1E /* StationListCell.xib in Resources */,
+				2787A5D31E95E6ED00EF276C /* SplashScreen.xib in Resources */,
+				2783DD121EB048B400590B1E /* FilterStationsCollection.xib in Resources */,
+				270399F81EAE6947009AACA3 /* XMLData.xml in Resources */,
+				2703DAB01EB4F08B0015F7B1 /* NavigationViewController.xib in Resources */,
+				273446A91E94883300C54B61 /* Assets.xcassets in Resources */,
+				27562CB11EB3CB6800F25C8C /* MainViewController.xib in Resources */,
+				2787A5E01EAC283200EF276C /* DebugViewController.xib in Resources */,
+				2783DD011EB0021E00590B1E /* StationListTable.xib in Resources */,
+				27201F561EBBE23500628EBB /* Stations.txt in Resources */,
+				2783DD161EB0497D00590B1E /* FilterStationsCell.xib in Resources */,
+				2783DCFC1EAFFD9200590B1E /* SelectStationViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08517DCC3C73C079C3E555CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find My Subway/Pods-Find My Subway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE7BD116003C1C2062729F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find My Subway/Pods-Find My Subway-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E78C459CECD64712E081F16A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		273446981E94883200C54B61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2703DAAF1EB4F08B0015F7B1 /* NavigationViewController.swift in Sources */,
+				2783DD151EB0497D00590B1E /* FilterStationsCell.swift in Sources */,
+				27201F581EBBE30A00628EBB /* ImportDataManager.swift in Sources */,
+				27562CB01EB3CB6800F25C8C /* MainViewController.swift in Sources */,
+				2783DD061EB0051B00590B1E /* StationListCell.swift in Sources */,
+				27835DAE1EAD0D3800FF264C /* UIViewExtension.swift in Sources */,
+				2787A5E41EAC2EF400EF276C /* StyleKit.swift in Sources */,
+				2787A5D51E9709BE00EF276C /* LocationManager.swift in Sources */,
+				2703DAB61EB512540015F7B1 /* Constants.swift in Sources */,
+				2783DD181EB04AC100590B1E /* SubwayStationHelper.swift in Sources */,
+				270399F11EAE304F009AACA3 /* DataManager.swift in Sources */,
+				273446A41E94883300C54B61 /* SceneView.swift in Sources */,
+				270399F41EAE306B009AACA3 /* SubwayStationData.swift in Sources */,
+				273446A01E94883300C54B61 /* AppDelegate.swift in Sources */,
+				2783DD111EB048B400590B1E /* FilterStationsCollection.swift in Sources */,
+				27AD62BC1EBA8A8000957C18 /* SelectionButton.swift in Sources */,
+				2703DAB41EB4FB870015F7B1 /* CMDeviceMotionExtension.swift in Sources */,
+				2783DCFB1EAFFD9200590B1E /* SelectStationViewController.swift in Sources */,
+				2787A5E91EAC449500EF276C /* DebugButton.swift in Sources */,
+				2787A5CB1E95E13C00EF276C /* CameraController.swift in Sources */,
+				27835DB01EAD0F2C00FF264C /* Utils.swift in Sources */,
+				27835DB21EAD3FF500FF264C /* StringExtension.swift in Sources */,
+				2783DD001EB0021E00590B1E /* StationListTable.swift in Sources */,
+				2787A5DF1EAC283200EF276C /* DebugViewController.swift in Sources */,
+				2787A5E21EAC284200EF276C /* DebugManager.swift in Sources */,
+				2783DD0A1EB00BF200590B1E /* StationListSubwayView.swift in Sources */,
+				2787A5E71EAC3FB000EF276C /* UIImageExtension.swift in Sources */,
+				27E740A11EAD4F4300BC41CD /* CompassView.swift in Sources */,
+				27201F5B1EBCC58200628EBB /* StationData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		273446AE1E94883300C54B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		273446AF1E94883300C54B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		273446B11E94883300C54B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791D949869F2A0FD7E2556C8 /* Pods-Find My Subway.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YXTAQ7A7F2;
+				INFOPLIST_FILE = "Find My Subway/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ameropel.Find-My-Subway";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		273446B21E94883300C54B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D62711D3B600D683C9B1BD05 /* Pods-Find My Subway.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YXTAQ7A7F2;
+				INFOPLIST_FILE = "Find My Subway/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ameropel.Find-My-Subway";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		273446971E94883200C54B61 /* Build configuration list for PBXProject "Find My Subway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273446AE1E94883300C54B61 /* Debug */,
+				273446AF1E94883300C54B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		273446B01E94883300C54B61 /* Build configuration list for PBXNativeTarget "Find My Subway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273446B11E94883300C54B61 /* Debug */,
+				273446B21E94883300C54B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 273446941E94883200C54B61 /* Project object */;
+}
